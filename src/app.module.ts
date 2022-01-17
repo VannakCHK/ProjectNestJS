@@ -9,8 +9,9 @@ import { ProductModule } from './product/product.module';
 import { InvoicedetailModule } from './invoicedetail/invoicedetail.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(config), CustomerModule, InvoiceModule, ProductModule, InvoicedetailModule],
+  imports: [TypeOrmModule.forRoot(config),
+    CustomerModule, InvoiceModule, ProductModule, InvoicedetailModule],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
